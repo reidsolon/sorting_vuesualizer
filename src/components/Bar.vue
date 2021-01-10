@@ -1,14 +1,14 @@
 <template>
     <div
         :class="`
-            ${([...compare].includes(index)) ? `bg-green-300 ` : ` `}
+            ${([...compare].includes(index)) ? `bg-green-400 ` : ` `}
             ${([...swap].includes(index)) ? `bg-red-500 ` : ` `}
             ${([...sorted].includes(index)) ? `bg-purple-500 ` : ` `}
             ${(![...swap].includes(index) && ![...compare].includes(index) && ![...sorted].includes(index)) ? `bg-blue-300 ` : ` `}
         `"
-        :style="`height: ${parseInt(height)}px; width: ${parseInt(width)}px; margin-right: 2px;transition: 0.1s;`"
+        :style="`height: ${parseInt(height)}px; width: ${parseInt(width)}px; margin-right: 2px;`"
     >
-    .
+    &nbsp;
     </div>
 </template>
 <script>
